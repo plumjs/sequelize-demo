@@ -20,7 +20,8 @@
     "dcp:stop": "docker-compose stop && docker-compose rm -vf",
     "dcp:restart": "docker-compose stop && docker-compose rm -vf && docker-compose up -d",
     "migrate:up": "node dist/src/migrate/up.js",
-    "migrate:down": "node dist/src/migrate/down.js"
+    "migrate:down": "node dist/src/migrate/down.js",
+    "generate:model": "ts-node scripts/gegerateModel.ts"
   },
   "repository": {
     "type": "git",
@@ -43,14 +44,15 @@
     "jest": "^24.9.0",
     "prettier": "^2.0.5",
     "ts-jest": "^24.1.0",
-    "typedoc": "^0.15.1",
+    "typedoc": "^0.17.0",
     "typedoc-plugin-markdown": "^2.2.11",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "sequelize-automate": "^1.2.2",
+    "sequelize-cli": "^5.5.1",
+    "umzug": "^2.3.0"
   },
   "dependencies": {
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.13",
-    "sequelize-cli": "^5.5.1",
-    "umzug": "^2.3.0"
+    "sequelize": "^5.21.13"
   }
 }
