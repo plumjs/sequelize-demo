@@ -43,15 +43,17 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^24.9.0",
     "prettier": "^2.0.5",
+    "sequelize-automate": "^1.2.2",
+    "sequelize-cli": "^5.5.1",
     "ts-jest": "^24.1.0",
     "typedoc": "^0.17.0",
     "typedoc-plugin-markdown": "^2.2.11",
     "typescript": "^3.9.5",
-    "sequelize-automate": "^1.2.2",
-    "sequelize-cli": "^5.5.1",
     "umzug": "^2.3.0"
   },
   "dependencies": {
+    "@types/morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.13"
   }
