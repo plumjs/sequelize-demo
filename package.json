@@ -1,0 +1,56 @@
+{
+  "name": "npm-base-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "bin": {
+    "model-cli": "dist/bin/cmd.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test-cov": "jest --coverage",
+    "build": "tsc --pretty",
+    "lint": "eslint --ext .js,.ts src test",
+    "lint:fix": "eslint --ext .js,.ts src test --fix",
+    "docs": "typedoc --options typedoc.json --plugin typedoc-plugin-markdown",
+    "dcp:start": "docker-compose up -d",
+    "dcp:stop": "docker-compose stop && docker-compose rm -vf",
+    "dcp:restart": "docker-compose stop && docker-compose rm -vf && docker-compose up -d",
+    "migrate:up": "node dist/src/migrate/up.js",
+    "migrate:down": "node dist/src/migrate/down.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfltmya/npm-base-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfltmya/npm-base-template/issues"
+  },
+  "homepage": "https://github.com/sfltmya/npm-base-template#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/umzug": "^2.2.3",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^24.9.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^24.1.0",
+    "typedoc": "^0.15.1",
+    "typedoc-plugin-markdown": "^2.2.11",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.13",
+    "sequelize-cli": "^5.5.1",
+    "umzug": "^2.3.0"
+  }
+}
