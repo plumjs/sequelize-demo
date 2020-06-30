@@ -12,6 +12,7 @@ const migration = new Umzug({
     sequelize: sequelize,
     pattern: /^\d+[\w-]+\.js$/,
     modelName: 'SequelizeMeta',
+    logging: false,
   },
 })
 

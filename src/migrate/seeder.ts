@@ -12,6 +12,7 @@ const seeder = new Umzug({
     sequelize: sequelize,
     pattern: /^\d+[\w-]+\.js$/,
     modelName: 'SequelizeData',
+    logging: false,
   },
 })
 
