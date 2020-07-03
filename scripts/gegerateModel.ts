@@ -10,7 +10,7 @@ const options = {
   typesDir: 'src/models/interfaces',
   skipTables: ['SequelizeData', 'SequelizeMeta'],
   tsNoCheck: true,
-  emptyDir: true,
+  emptyDir: false,
 }
 
 ;(async function main() {

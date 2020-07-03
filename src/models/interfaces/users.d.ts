@@ -4,6 +4,7 @@ export interface IUsersAttributes {
   name: string,
   createdAt: Date,
   updatedAt: Date,
+  roleId?: number,
 }
 export interface IUsersModel extends IUsersAttributes, Model {}
 export type IUsersModelStatic = typeof Model & {

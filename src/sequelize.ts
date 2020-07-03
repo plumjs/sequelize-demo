@@ -1,9 +1,9 @@
 import { Sequelize } from 'sequelize'
 import { config } from './config'
 
-let sequelize: any = null
+let sequelize: Sequelize = null
 ;(async () => {
-  sequelize = new Sequelize(config.dbOptions)
+  sequelize = new Sequelize(config.dbOptions2)
   await sequelize.authenticate()
 })()
 

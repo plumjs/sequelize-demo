@@ -1,6 +1,5 @@
 //@ts-nocheck
 import { Sequelize, DataTypes } from 'sequelize'
-
 export default function (sequelize: Sequelize) {
   const attributes = {
     id: {
@@ -39,21 +38,21 @@ export default function (sequelize: Sequelize) {
       comment: null,
       field: 'updatedAt',
     },
-    roleId: {
+    userId: {
       type: DataTypes.INTEGER(11),
       allowNull: true,
       defaultValue: null,
       primaryKey: false,
       autoIncrement: false,
       comment: null,
-      field: 'roleId',
+      field: 'userId',
     },
   }
   const options = {
-    tableName: 'users',
+    tableName: 'roles',
     comment: '',
     indexes: [],
   }
-  const UsersModel = sequelize.define('users', attributes, options)
-  return UsersModel
+  const RolesModel = sequelize.define('roles', attributes, options)
+  return RolesModel
 }

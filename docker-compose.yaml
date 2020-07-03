@@ -10,5 +10,5 @@ services:
       - MYSQL_DATABASE=sequelize-demo
     ports:
       - target: 3306
-        published: 3306
+        published: 3307
         mode: host

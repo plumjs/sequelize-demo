@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/sfltmya/npm-base-template#readme",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/jest": "^24.0.19",
     "@types/umzug": "^2.2.3",
     "@typescript-eslint/eslint-plugin": "^3.4.0",
@@ -53,6 +54,9 @@
   },
   "dependencies": {
     "@types/morgan": "^1.9.1",
+    "@types/sequelize": "^4.28.9",
+    "axios": "^0.19.2",
+    "crypto": "^1.0.1",
     "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.13"
