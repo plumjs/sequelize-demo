@@ -1,17 +1,22 @@
 import { DataTypes, QueryInterface } from 'sequelize'
 
 async function up(queryInterface: QueryInterface) {
-  await queryInterface.createTable('roles', {
+  await queryInterface.createTable('role_router', {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       field: 'id',
     },
-    name: {
-      type: DataTypes.STRING,
+    roleId: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      field: 'name',
+      field: 'role_id',
+    },
+    routerId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      field: 'router_id',
     },
     createdAt: {
       type: DataTypes.DATE,
@@ -27,7 +32,7 @@ async function up(queryInterface: QueryInterface) {
 }
 
 async function down(queryInterface: QueryInterface) {
-  await queryInterface.dropTable('roles')
+  await queryInterface.dropTable('role_router')
 }
 
 export default { up, down }

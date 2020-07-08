@@ -5,8 +5,9 @@ async function up(queryInterface: QueryInterface) {
     {
       id: 1,
       name: 'John',
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      role_id: 1,
+      created_at: new Date(),
+      updated_at: new Date(),
     },
   ])
 }

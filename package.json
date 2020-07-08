@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "test-cov": "jest --coverage",
-    "build": "tsc --pretty",
+    "build": "rimraf dist && tsc --pretty",
     "lint": "eslint --ext .js,.ts src test",
     "lint:fix": "eslint --ext .js,.ts src test --fix",
     "docs": "typedoc --options typedoc.json --plugin typedoc-plugin-markdown",

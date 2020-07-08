@@ -1,7 +1,6 @@
 declare module 'sequelize-automate' {
-  class Automate {
-    constructor(dbOptions: any, options: any)
-    run(): string
+  export default class Automate {
+    constructor(config: any, options: any)
+    run: () => {}
   }
-  export default Automate
 }

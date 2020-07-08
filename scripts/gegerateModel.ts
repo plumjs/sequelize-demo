@@ -1,7 +1,7 @@
 /**
  * @desc 在有migrte发生后执行, 依据数据库表结构生成model文件
  */
-import Automate from 'sequelize-automate'
+import { default as Automate } from 'sequelize-automate'
 import { config } from '../src/config'
 
 const options = {

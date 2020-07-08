@@ -1,15 +1,12 @@
-//@ts-nocheck
-// import user from './users'
-// import role from './roles'
-import service from './services'
+import { Role } from './role'
+import { User } from './user'
+import { Router } from './router'
 import { sequelize } from '../sequelize'
 
-// const UserModel = user(sequelize)
-// const RoleModel = role(sequelize)
-const ServiceModel = service(sequelize)
+Role.associate(sequelize.models)
+User.associate(sequelize.models)
+Router.associate(sequelize.models)
 
-// RoleModel.hasOne(UserModel)
-// RoleModel.addScope('withUser', {
-//   include: UserModel,
-// })
-export { UserModel, RoleModel, ServiceModel }
+const keys = Object.keys(sequelize.models)
+console.log('keys:', keys)
+export { Role, User, Router }
